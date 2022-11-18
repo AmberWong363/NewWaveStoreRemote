@@ -7,6 +7,15 @@
 
 import Foundation
 
+/*
+ Class Product, used for well, products
+ has a name, description, and a picture. No one cares about price or quantity since there aren't being sold anyway
+ 
+ Take an L, New Wave Store! hahaha!
+ 
+ Yatta!
+ All hail the great and divine Herrscher of Sentience!
+ */
 class Product : ObservableObject {
     @Published var name : String
     @Published var description : String
