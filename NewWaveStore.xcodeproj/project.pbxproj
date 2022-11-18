@@ -14,6 +14,7 @@
 		A3FBBC6A2927FE5A00A9B066 /* NewWaveStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC692927FE5A00A9B066 /* NewWaveStoreTests.swift */; };
 		A3FBBC742927FE5A00A9B066 /* NewWaveStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC732927FE5A00A9B066 /* NewWaveStoreUITests.swift */; };
 		A3FBBC762927FE5A00A9B066 /* NewWaveStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC752927FE5A00A9B066 /* NewWaveStoreUITestsLaunchTests.swift */; };
+		A3FBBC83292803BD00A9B066 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC82292803BD00A9B066 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A3FBBC6F2927FE5A00A9B066 /* NewWaveStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewWaveStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC732927FE5A00A9B066 /* NewWaveStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWaveStoreUITests.swift; sourceTree = "<group>"; };
 		A3FBBC752927FE5A00A9B066 /* NewWaveStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWaveStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3FBBC82292803BD00A9B066 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */,
 				A3FBBC5A2927FE5500A9B066 /* ContentView.swift */,
 				A3FBBC5C2927FE5900A9B066 /* Assets.xcassets */,
+				A3FBBC82292803BD00A9B066 /* Product.swift */,
 				A3FBBC5E2927FE5900A9B066 /* Preview Content */,
 			);
 			path = NewWaveStore;
@@ -259,6 +262,7 @@
 			files = (
 				A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */,
 				A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */,
+				A3FBBC83292803BD00A9B066 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
