@@ -12,6 +12,7 @@
 		A3FBBC5D2927FE5900A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBC5C2927FE5900A9B066 /* Assets.xcassets */; };
 		A3FBBC602927FE5900A9B066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBC5F2927FE5900A9B066 /* Preview Assets.xcassets */; };
 		A3FBBC83292803BD00A9B066 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC82292803BD00A9B066 /* Product.swift */; };
+		A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC88292808AB00A9B066 /* ProductList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A3FBBC652927FE5A00A9B066 /* NewWaveStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewWaveStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC6F2927FE5A00A9B066 /* NewWaveStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewWaveStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC82292803BD00A9B066 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A3FBBC88292808AB00A9B066 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				A3FBBC82292803BD00A9B066 /* Product.swift */,
+				A3FBBC88292808AB00A9B066 /* ProductList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */,
+				A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */,
 				A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */,
 				A3FBBC83292803BD00A9B066 /* Product.swift in Sources */,
 			);
