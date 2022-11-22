@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var product : Product = Product("New Wave PC", description: "A PC made by NewWave", picture: "NW-PC", quantity: 0, price: 0.0)
+    
     var body: some View {
-        Text("Biggbly Goober")
-            .padding()
+        ZStack {
+            ProductView(product: $product)
+                .padding()
+        }
     }
 }
 

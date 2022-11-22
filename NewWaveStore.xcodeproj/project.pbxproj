@@ -13,6 +13,8 @@
 		A3FBBC602927FE5900A9B066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBC5F2927FE5900A9B066 /* Preview Assets.xcassets */; };
 		A3FBBC83292803BD00A9B066 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC82292803BD00A9B066 /* Product.swift */; };
 		A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC88292808AB00A9B066 /* ProductList.swift */; };
+		A3FBBC8B292C05C600A9B066 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC8A292C05C600A9B066 /* Constants.swift */; };
+		A3FBBC91292C078A00A9B066 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC90292C078A00A9B066 /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		A3FBBC6F2927FE5A00A9B066 /* NewWaveStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewWaveStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC82292803BD00A9B066 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A3FBBC88292808AB00A9B066 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		A3FBBC8A292C05C600A9B066 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3FBBC90292C078A00A9B066 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		A3FBBC842928071200A9B066 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3FBBC90292C078A00A9B066 /* ProductView.swift */,
 				A3FBBC5A2927FE5500A9B066 /* ContentView.swift */,
 			);
 			path = Views;
@@ -118,6 +123,7 @@
 		A3FBBC852928073C00A9B066 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3FBBC8A292C05C600A9B066 /* Constants.swift */,
 				A3FBBC82292803BD00A9B066 /* Product.swift */,
 				A3FBBC88292808AB00A9B066 /* ProductList.swift */,
 			);
@@ -254,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FBBC8B292C05C600A9B066 /* Constants.swift in Sources */,
 				A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */,
 				A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */,
 				A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */,
+				A3FBBC91292C078A00A9B066 /* ProductView.swift in Sources */,
 				A3FBBC83292803BD00A9B066 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
