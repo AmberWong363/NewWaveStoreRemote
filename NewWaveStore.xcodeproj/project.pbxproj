@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3437875292E6CE2004E393D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3437874292E6CE2004E393D /* HomeView.swift */; };
 		A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */; };
 		A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC5A2927FE5500A9B066 /* ContentView.swift */; };
 		A3FBBC5D2927FE5900A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBC5C2927FE5900A9B066 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3437874292E6CE2004E393D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A3FBBC552927FE5500A9B066 /* NewWaveStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWaveStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWaveStoreApp.swift; sourceTree = "<group>"; };
 		A3FBBC5A2927FE5500A9B066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				A3FBBC90292C078A00A9B066 /* ProductView.swift */,
 				A3FBBC5A2927FE5500A9B066 /* ContentView.swift */,
+				A3437874292E6CE2004E393D /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FBBC8B292C05C600A9B066 /* Constants.swift in Sources */,
+				A3437875292E6CE2004E393D /* HomeView.swift in Sources */,
 				A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */,
 				A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */,
 				A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */,

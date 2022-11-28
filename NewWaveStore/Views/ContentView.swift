@@ -9,18 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var product : Product = Product("New Wave PC", description: "A PC made by NewWave", picture: "NW-PC", quantity: 0, price: 0.0)
+    @EnvironmentObject var productList : ProductList
+    //    @State var product : Product = Product("New Wave PC", description: "A PC made by NewWave", picture: "NW-PC", quantity: 0, price: 0.0)
     
     var body: some View {
         ZStack {
-            ProductView(product: $product)
-                .padding()
+            HomeView()
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

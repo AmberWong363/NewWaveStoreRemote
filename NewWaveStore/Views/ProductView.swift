@@ -14,25 +14,24 @@ struct ProductView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(width: 200, height: 100)
+                .frame(width: 250, height: 120)
                 .foregroundColor(Color.gray)
             
             HStack {
                 Image("\(product.picture)")
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .aspectRatio(contentMode: .fit)
                     .padding()
                 VStack(alignment: .leading) {
                     Text("\(product.name)")
-                        .padding(3)
+                        .padding(.vertical, 3.0)
                         .foregroundColor(Color.black)
-                    Text("\(product.price)")
-                        .padding(3)
+                    Text(String(format: "$%.2f", product.price))
+                        .padding(.vertical, 3.0)
                         .foregroundColor(Color.black)
-                    Spacer()
                 }
-                Spacer()
                 .padding()
+                .frame(width: 120, height: 120)
             }
             
         }

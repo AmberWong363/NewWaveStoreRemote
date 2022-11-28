@@ -14,7 +14,7 @@ struct NewWaveStoreApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(productList)
+            ContentView().environmentObject(ProductList())
         }
     }
 }
