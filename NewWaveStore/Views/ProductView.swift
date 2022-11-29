@@ -16,25 +16,30 @@ struct ProductView: View {
             Rectangle()
                 .frame(width: 250, height: 120)
                 .foregroundColor(Color.gray)
-            
-            HStack {
+                .cornerRadius(20)
+
+            HStack(alignment: .top) {
                 Image("\(product.picture)")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding()
+                    .frame(width: 100, height: 120, alignment: .leading)
                 VStack(alignment: .leading) {
                     Text("\(product.name)")
+                        .font(Constants.textFont)
                         .padding(.vertical, 3.0)
                         .foregroundColor(Color.black)
                     Text(String(format: "$%.2f", product.price))
+                        .font(Constants.buttonFont)
                         .padding(.vertical, 3.0)
                         .foregroundColor(Color.black)
                 }
-                .padding()
-                .frame(width: 120, height: 120)
+                Spacer()
+                
             }
             
         }
+        .frame(width: 250, height: 120)
     }
 }
 

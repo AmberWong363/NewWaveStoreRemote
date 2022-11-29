@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var productList : ProductList
-    //    @State var product : Product = Product("New Wave PC", description: "A PC made by NewWave", picture: "NW-PC", quantity: 0, price: 0.0)
+    @State var product : Product = Product("New Wave PC", description: "A PC made by NewWave", picture: "NW-PC", quantity: 0, price: 9999.99)
     
     var body: some View {
         ZStack {
-            HomeView()
+            ProductDetailView(product: $product)
         }
     }
 }
