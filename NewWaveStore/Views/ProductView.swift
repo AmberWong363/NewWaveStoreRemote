@@ -16,7 +16,7 @@ struct ProductView: View {
             Rectangle()
                 .frame(width: 250, height: 120)
                 .foregroundColor(Color.gray)
-                .cornerRadius(20)
+                .cornerRadius(5)
 
             HStack(alignment: .top) {
                 Image("\(product.picture)")
@@ -31,8 +31,7 @@ struct ProductView: View {
                         .foregroundColor(Color.black)
                     Text(String(format: "$%.2f", product.price))
                         .font(Constants.buttonFont)
-                        .padding(.vertical, 3.0)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.highlight)
                 }
                 Spacer()
                 

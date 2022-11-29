@@ -17,3 +17,8 @@ struct Constants {
 extension Color {
     static let highlight = Color("Highlight")
 }
+
+enum ViewState {
+    case list
+    case detail
+}

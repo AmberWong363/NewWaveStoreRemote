@@ -10,11 +10,14 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var productList : ProductList
-    @State var product : Product = Product("New Wave PC", description: "A PC made by NewWave", picture: "NW-PC", quantity: 0, price: 9999.99)
+    @State var viewState : ViewState = .list
+    @State var index : Int = 0
     
     var body: some View {
-        ZStack {
-            ProductDetailView(product: $product)
+        if viewState == .list {
+            HomeView(viewState: $viewState, index: $index)
+        } else {
+            ProductDetailView(product: $productList.list[index], viewState: $viewState)
         }
     }
 }

@@ -10,10 +10,22 @@ import SwiftUI
 struct ProductDetailView: View {
     
     @Binding var product : Product
+    @Binding var viewState : ViewState
     
     var body: some View {
         
         VStack {
+            Button {
+                viewState = .list
+            } label: {
+                Text("<< Back")
+                    .padding(.horizontal)
+                    .font(Constants.buttonFont)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(Color.highlight)
+            }
+
+            
             Image(product.picture)
                 .resizable()
                 .padding()
