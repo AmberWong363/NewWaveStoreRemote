@@ -21,4 +21,5 @@ extension Color {
 enum ViewState {
     case list
     case detail
+    case cart
 }

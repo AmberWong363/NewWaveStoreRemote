@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ProductDetailView: View {
     
+    @EnvironmentObject var cart : Cart
     @Binding var product : Product
     @Binding var viewState : ViewState
+    @State var quantityShown = 0
+    @State var quantityChanged = false
     
     var body: some View {
         
@@ -48,7 +51,7 @@ struct ProductDetailView: View {
                 .foregroundColor(Color.highlight)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text("Quantity left: \(product.quantity)")
+            Text("Quantity left: \(quantityChanged ? quantityShown : product.quantity)")
                 .padding(.horizontal)
                 .font(Constants.textFont)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -56,7 +59,10 @@ struct ProductDetailView: View {
             Spacer()
             
             Button {
-                //
+                cart.add(product)
+                product.quantity -= 1
+                quantityChanged = true
+                quantityShown = product.quantity
             } label: {
                 Text("Add to cart")
                     .padding()

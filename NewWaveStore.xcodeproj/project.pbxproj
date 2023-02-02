@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A3437875292E6CE2004E393D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3437874292E6CE2004E393D /* HomeView.swift */; };
 		A343787929353011004E393D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343787829353011004E393D /* ProductDetailView.swift */; };
+		A3437889293915B6004E393D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3437888293915B6004E393D /* Cart.swift */; };
+		A343788B29391778004E393D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343788A29391778004E393D /* CartView.swift */; };
+		A343788D293918BA004E393D /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343788C293918BA004E393D /* CartItemView.swift */; };
 		A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */; };
 		A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC5A2927FE5500A9B066 /* ContentView.swift */; };
 		A3FBBC5D2927FE5900A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBC5C2927FE5900A9B066 /* Assets.xcassets */; };
@@ -17,6 +20,7 @@
 		A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC88292808AB00A9B066 /* ProductList.swift */; };
 		A3FBBC8B292C05C600A9B066 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC8A292C05C600A9B066 /* Constants.swift */; };
 		A3FBBC91292C078A00A9B066 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC90292C078A00A9B066 /* ProductView.swift */; };
+		CDF7F2B4CB9CFC5DB1238B75 /* Pods_NewWaveStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E02914F3B6C6A2DB73C824 /* Pods_NewWaveStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21237CE3DA5DBFC8AB0544CA /* Pods-NewWaveStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewWaveStore.release.xcconfig"; path = "Target Support Files/Pods-NewWaveStore/Pods-NewWaveStore.release.xcconfig"; sourceTree = "<group>"; };
+		73E02914F3B6C6A2DB73C824 /* Pods_NewWaveStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewWaveStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D90CE61E9B31010CA046898 /* Pods-NewWaveStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewWaveStore.debug.xcconfig"; path = "Target Support Files/Pods-NewWaveStore/Pods-NewWaveStore.debug.xcconfig"; sourceTree = "<group>"; };
 		A3437874292E6CE2004E393D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A343787829353011004E393D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		A3437888293915B6004E393D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		A343788A29391778004E393D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		A343788C293918BA004E393D /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
 		A3FBBC552927FE5500A9B066 /* NewWaveStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWaveStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWaveStoreApp.swift; sourceTree = "<group>"; };
 		A3FBBC5A2927FE5500A9B066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF7F2B4CB9CFC5DB1238B75 /* Pods_NewWaveStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +88,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B9702F6AA7D92E020ABFDF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73E02914F3B6C6A2DB73C824 /* Pods_NewWaveStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98EE176D4A73096B53B651FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D90CE61E9B31010CA046898 /* Pods-NewWaveStore.debug.xcconfig */,
+				21237CE3DA5DBFC8AB0544CA /* Pods-NewWaveStore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A3FBBC4C2927FE5400A9B066 = {
 			isa = PBXGroup;
 			children = (
 				A3FBBC572927FE5500A9B066 /* NewWaveStore */,
 				A3FBBC562927FE5500A9B066 /* Products */,
+				98EE176D4A73096B53B651FF /* Pods */,
+				8B9702F6AA7D92E020ABFDF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +153,8 @@
 				A3FBBC90292C078A00A9B066 /* ProductView.swift */,
 				A3FBBC5A2927FE5500A9B066 /* ContentView.swift */,
 				A3437874292E6CE2004E393D /* HomeView.swift */,
+				A343788A29391778004E393D /* CartView.swift */,
+				A343788C293918BA004E393D /* CartItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +165,7 @@
 				A3FBBC8A292C05C600A9B066 /* Constants.swift */,
 				A3FBBC82292803BD00A9B066 /* Product.swift */,
 				A3FBBC88292808AB00A9B066 /* ProductList.swift */,
+				A3437888293915B6004E393D /* Cart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3FBBC792927FE5A00A9B066 /* Build configuration list for PBXNativeTarget "NewWaveStore" */;
 			buildPhases = (
+				30952FB54CFFA93C9BA4D1B9 /* [CP] Check Pods Manifest.lock */,
 				A3FBBC512927FE5500A9B066 /* Sources */,
 				A3FBBC522927FE5500A9B066 /* Frameworks */,
 				A3FBBC532927FE5500A9B066 /* Resources */,
+				5B0311075C0BFD0EE826D448 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,12 +297,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30952FB54CFFA93C9BA4D1B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewWaveStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0311075C0BFD0EE826D448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewWaveStore/Pods-NewWaveStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewWaveStore/Pods-NewWaveStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewWaveStore/Pods-NewWaveStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3FBBC512927FE5500A9B066 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A343788D293918BA004E393D /* CartItemView.swift in Sources */,
+				A343788B29391778004E393D /* CartView.swift in Sources */,
 				A3FBBC8B292C05C600A9B066 /* Constants.swift in Sources */,
+				A3437889293915B6004E393D /* Cart.swift in Sources */,
 				A343787929353011004E393D /* ProductDetailView.swift in Sources */,
 				A3437875292E6CE2004E393D /* HomeView.swift in Sources */,
 				A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */,
@@ -423,6 +504,7 @@
 		};
 		A3FBBC7A2927FE5A00A9B066 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D90CE61E9B31010CA046898 /* Pods-NewWaveStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +534,7 @@
 		};
 		A3FBBC7B2927FE5A00A9B066 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21237CE3DA5DBFC8AB0544CA /* Pods-NewWaveStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

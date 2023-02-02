@@ -11,10 +11,13 @@ import SwiftUI
 struct NewWaveStoreApp: App {
     
     @StateObject var productList : ProductList = ProductList()
+    @StateObject var cart : Cart = Cart()
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(productList)
+            ContentView()
+                .environmentObject(productList)
+                .environmentObject(cart)
         }
     }
 }
