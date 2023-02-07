@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct HomeView: View {
     
+    @EnvironmentObject var viewRouter : ViewRouter
     @EnvironmentObject var productList : ProductList
     @EnvironmentObject var cart : Cart
+    @EnvironmentObject var user : User
     @Binding var viewState : ViewState
     @Binding var index : Int
     
@@ -18,6 +21,21 @@ struct HomeView: View {
         
         TabView {
             VStack {
+                Button {
+                    try! Auth.auth().signOut()
+                    
+                    user.username = ""
+                    user.password = ""
+                    user.loggedIn = false
+                    
+                    viewRouter.currentPage = .page2
+                } label: {
+                    Text("Sign Out")
+                        .padding()
+                        .background(Color.gray.opacity(0.3))
+                        .cornerRadius(10)
+                }
+
                 ScrollView {
                     ForEach($productList.list.indices, id: \.self) { index in
                         ProductView(product: $productList.list[index])

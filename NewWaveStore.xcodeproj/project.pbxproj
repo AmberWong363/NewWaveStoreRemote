@@ -12,6 +12,13 @@
 		A3437889293915B6004E393D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3437888293915B6004E393D /* Cart.swift */; };
 		A343788B29391778004E393D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343788A29391778004E393D /* CartView.swift */; };
 		A343788D293918BA004E393D /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343788C293918BA004E393D /* CartItemView.swift */; };
+		A39BBB4E29916AB30003D8FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BBB4D29916AB20003D8FB /* User.swift */; };
+		A39BBB502992C7AF0003D8FB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BBB4F2992C7AF0003D8FB /* ImagePicker.swift */; };
+		A3B7B552298C3F6C002B2DC4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B551298C3F6C002B2DC4 /* SignInView.swift */; };
+		A3B7B554298C3F76002B2DC4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B553298C3F76002B2DC4 /* SignUpView.swift */; };
+		A3B7B556298C405C002B2DC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B7B555298C405C002B2DC4 /* GoogleService-Info.plist */; };
+		A3B7B558298C40FC002B2DC4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B557298C40FC002B2DC4 /* ViewRouter.swift */; };
+		A3B7B55A298C4129002B2DC4 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B559298C4129002B2DC4 /* MotherView.swift */; };
 		A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */; };
 		A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC5A2927FE5500A9B066 /* ContentView.swift */; };
 		A3FBBC5D2927FE5900A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBC5C2927FE5900A9B066 /* Assets.xcassets */; };
@@ -49,6 +56,13 @@
 		A3437888293915B6004E393D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		A343788A29391778004E393D /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		A343788C293918BA004E393D /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
+		A39BBB4D29916AB20003D8FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A39BBB4F2992C7AF0003D8FB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A3B7B551298C3F6C002B2DC4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		A3B7B553298C3F76002B2DC4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		A3B7B555298C405C002B2DC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3B7B557298C40FC002B2DC4 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		A3B7B559298C4129002B2DC4 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		A3FBBC552927FE5500A9B066 /* NewWaveStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWaveStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWaveStoreApp.swift; sourceTree = "<group>"; };
 		A3FBBC5A2927FE5500A9B066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,8 +116,16 @@
 				8D90CE61E9B31010CA046898 /* Pods-NewWaveStore.debug.xcconfig */,
 				21237CE3DA5DBFC8AB0544CA /* Pods-NewWaveStore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3B7B54E298C3F3D002B2DC4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A3B7B551298C3F6C002B2DC4 /* SignInView.swift */,
+				A3B7B553298C3F76002B2DC4 /* SignUpView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		A3FBBC4C2927FE5400A9B066 = {
@@ -129,9 +151,11 @@
 		A3FBBC572927FE5500A9B066 /* NewWaveStore */ = {
 			isa = PBXGroup;
 			children = (
+				A3B7B54E298C3F3D002B2DC4 /* Authentication */,
 				A3FBBC852928073C00A9B066 /* Model */,
 				A3FBBC842928071200A9B066 /* Views */,
 				A3FBBC582927FE5500A9B066 /* NewWaveStoreApp.swift */,
+				A3B7B555298C405C002B2DC4 /* GoogleService-Info.plist */,
 				A3FBBC5C2927FE5900A9B066 /* Assets.xcassets */,
 				A3FBBC5E2927FE5900A9B066 /* Preview Content */,
 			);
@@ -149,12 +173,14 @@
 		A3FBBC842928071200A9B066 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A39BBB4F2992C7AF0003D8FB /* ImagePicker.swift */,
 				A343787829353011004E393D /* ProductDetailView.swift */,
 				A3FBBC90292C078A00A9B066 /* ProductView.swift */,
 				A3FBBC5A2927FE5500A9B066 /* ContentView.swift */,
 				A3437874292E6CE2004E393D /* HomeView.swift */,
 				A343788A29391778004E393D /* CartView.swift */,
 				A343788C293918BA004E393D /* CartItemView.swift */,
+				A3B7B559298C4129002B2DC4 /* MotherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +192,8 @@
 				A3FBBC82292803BD00A9B066 /* Product.swift */,
 				A3FBBC88292808AB00A9B066 /* ProductList.swift */,
 				A3437888293915B6004E393D /* Cart.swift */,
+				A3B7B557298C40FC002B2DC4 /* ViewRouter.swift */,
+				A39BBB4D29916AB20003D8FB /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +306,7 @@
 			files = (
 				A3FBBC602927FE5900A9B066 /* Preview Assets.xcassets in Resources */,
 				A3FBBC5D2927FE5900A9B066 /* Assets.xcassets in Resources */,
+				A3B7B556298C405C002B2DC4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,12 +374,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A343788D293918BA004E393D /* CartItemView.swift in Sources */,
+				A3B7B558298C40FC002B2DC4 /* ViewRouter.swift in Sources */,
 				A343788B29391778004E393D /* CartView.swift in Sources */,
+				A39BBB502992C7AF0003D8FB /* ImagePicker.swift in Sources */,
 				A3FBBC8B292C05C600A9B066 /* Constants.swift in Sources */,
+				A39BBB4E29916AB30003D8FB /* User.swift in Sources */,
+				A3B7B55A298C4129002B2DC4 /* MotherView.swift in Sources */,
 				A3437889293915B6004E393D /* Cart.swift in Sources */,
 				A343787929353011004E393D /* ProductDetailView.swift in Sources */,
 				A3437875292E6CE2004E393D /* HomeView.swift in Sources */,
+				A3B7B552298C3F6C002B2DC4 /* SignInView.swift in Sources */,
 				A3FBBC5B2927FE5500A9B066 /* ContentView.swift in Sources */,
+				A3B7B554298C3F76002B2DC4 /* SignUpView.swift in Sources */,
 				A3FBBC89292808AC00A9B066 /* ProductList.swift in Sources */,
 				A3FBBC592927FE5500A9B066 /* NewWaveStoreApp.swift in Sources */,
 				A3FBBC91292C078A00A9B066 /* ProductView.swift in Sources */,
